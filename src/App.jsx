@@ -17,8 +17,9 @@ const HomePage = () => (
     <WorkflowSection />
     <BenefitsSection />
     <JobRolesSection />
-    <FAQSection />
+   
     <ScrollStack />
+    <FAQSection />
     <FooterSection />
   </div>
 );
