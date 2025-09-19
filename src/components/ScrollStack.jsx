@@ -213,17 +213,9 @@ const ScrollStack = () => {
         animation: shimmer 2s ease-in-out infinite;
       }
       
-      .scroll-snap-container {
-        height: 100vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-      }
-      
       .scroll-snap-slide {
         height: 100vh;
         scroll-snap-align: start;
-        scroll-snap-stop: always;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -235,7 +227,7 @@ const ScrollStack = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen overflow-hidden relative">
+    <div className="w-full relative">
       {/* Clean Progress bar */}
       <div className="fixed top-0 left-0 h-0.5 z-50 bg-gray-200">
         <div 
@@ -244,10 +236,10 @@ const ScrollStack = () => {
         />
       </div>
       
-      {/* Full-screen scroll container */}
+      {/* Full-screen content */}
       <div 
         ref={containerRef}
-        className="scroll-snap-container"
+        className="w-full"
       >
         {/* Professional Header section */}
         <section className="scroll-snap-slide bg-white relative">
