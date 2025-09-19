@@ -10,23 +10,21 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30">
-      {/* Grid Background */}
-      <div className="absolute inset-0 opacity-20">
+    <div className="min-h-screen relative overflow-hidden bg-white">
+      {/* Clean Grid Background */}
+      <div className="absolute inset-0 opacity-5">
         <div 
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px)
+              linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px)
             `,
-            backgroundSize: '32px 32px'
+            backgroundSize: '60px 60px'
           }}
         />
       </div>
 
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40" />
 
       {/* Enhanced Professional Navbar */}
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300">
